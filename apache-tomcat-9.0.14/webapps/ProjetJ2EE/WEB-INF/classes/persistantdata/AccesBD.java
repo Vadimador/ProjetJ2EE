@@ -22,7 +22,7 @@ public class AccesBD {
 		
 		//Creation d'un PreparedStatement pour une requete
 		//On met un ? là où on ajoutera un element (même principe que les requêtes en PHP)
-		String req = "SELECT Login, MotDePasse FROM Utilisateur";
+		String req = "SELECT Login, MotDePasse FROM Utilisateur WHERE NOMUTILISATEUR = ?";
 		PreparedStatement stmt = connect.prepareStatement("SELECT Login, MotDePasse FROM Utilisateur");
 		
 		//stmt.setString(1,nomUser);
