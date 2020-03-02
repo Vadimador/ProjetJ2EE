@@ -10,7 +10,7 @@ div.center {
     position: absolute;
     top: 50%;
     left : 50%;
-    transform: translate(-50%,-90%);
+    transform: translate(-50%,-100%);
 }
 
 div#Login {
@@ -24,6 +24,7 @@ div#Login {
 
 div#Login h1 {
     color: white;
+    
 }
 
 div#Login form {
@@ -41,10 +42,19 @@ div#Login form {
 div#Login form input {
     width: 60%;
     box-shadow: -11px 14px 5px 0px rgba(0,0,0,0.76);
+    text-align : center;
+    font-size: 0.4em;
+    min-width: 200px;
 }
 
 div#Login form input#connection {
     width: 40%;
+    transition: 0.4s;
+}
+
+div#Login form input#connection:hover {
+    color: #caaf28;
+    font-size: 0.42em;
 }
 
 form input {
