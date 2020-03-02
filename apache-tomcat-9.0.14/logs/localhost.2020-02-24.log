@@ -1,0 +1,52 @@
+24-Feb-2020 14:39:17.673 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+24-Feb-2020 14:39:17.673 INFOS [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+24-Feb-2020 14:39:17.676 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@17f7cd29')
+24-Feb-2020 14:44:04.450 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+24-Feb-2020 14:44:04.450 INFOS [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+24-Feb-2020 14:44:04.453 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@17f7cd29')
+24-Feb-2020 15:04:46.186 GRAVE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() du Servlet [jsp] dans le contexte au chemin [/TP4] a retourné une exception [Exception lancée durent le traitement de [accueil.jsp] à la ligne [8]
+
+5: 	String sexe = request.getParameter("sexe");
+6: 	String civilite = "Madame";
+7: 	
+8: 	if(sexe.equalsIgnoreCase("m")) {
+9: 		civilite = "Monsieur";
+10: 	}
+11: 	else if(sexe.equalsIgnoreCase("f")) {
+
+
+Stacktrace:] avec la cause
+ java.lang.NullPointerException
+	at org.apache.jsp.accueil_jsp._jspService(accueil_jsp.java:126)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+24-Feb-2020 17:31:45.294 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+24-Feb-2020 17:31:45.294 INFOS [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+24-Feb-2020 17:31:45.297 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@17f7cd29')

@@ -1,0 +1,153 @@
+27-Jan-2020 15:47:48.414 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.14
+27-Jan-2020 15:47:48.417 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:        Dec 6 2018 21:13:53 UTC
+27-Jan-2020 15:47:48.418 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.14.0
+27-Jan-2020 15:47:48.418 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 10
+27-Jan-2020 15:47:48.418 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version de lOS:        {0}
+27-Jan-2020 15:47:48.418 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Jan-2020 15:47:48.418 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk1.8.0_211\jre
+27-Jan-2020 15:47:48.418 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           1.8.0_211-b12
+27-Jan-2020 15:47:48.418 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+27-Jan-2020 15:47:48.419 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:47:48.419 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:47:48.419 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=Z:\2eme_annee\apache-tomcat-9.0.14\conf\logging.properties
+27-Jan-2020 15:47:48.419 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Jan-2020 15:47:48.419 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djdk.tls.ephemeralDHKeySize=2048
+27-Jan-2020 15:47:48.419 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Jan-2020 15:47:48.420 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dignore.endorsed.dirs=
+27-Jan-2020 15:47:48.420 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:47:48.421 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:47:48.421 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=Z:\2eme_annee\apache-tomcat-9.0.14\temp
+27-Jan-2020 15:47:48.422 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\app\product\11.2.0\client_1\bin;C:\Program Files\Addinsoft\XLSTAT\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Windows\CCM;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\doxygen\bin;C:\Program Files\leJOS EV3\bin;c:\Php7;c:\Php7\bin;C:\Program Files (x86)\PsychoPy2;C:\Program Files (x86)\PsychoPy2\DLLs;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\SASHome\Secure\ccme4;C:\Program Files\SASHome\x86\Secure\ccme4;C:\Windows\CCM;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\goldanig\AppData\Local\Microsoft\WindowsApps;;.]
+27-Jan-2020 15:47:48.601 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+27-Jan-2020 15:47:48.778 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["ajp-nio-8009"]
+27-Jan-2020 15:47:48.784 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 059] millisecondes
+27-Jan-2020 15:47:48.850 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+27-Jan-2020 15:47:48.850 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.14]
+27-Jan-2020 15:47:48.867 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\docs]
+27-Jan-2020 15:47:49.556 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\docs] de l'application web s'est terminé en [689] ms
+27-Jan-2020 15:47:49.557 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\examples]
+27-Jan-2020 15:47:52.299 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\examples] de l'application web s'est terminé en [2 742] ms
+27-Jan-2020 15:47:52.299 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\host-manager]
+27-Jan-2020 15:47:52.377 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\host-manager] de l'application web s'est terminé en [78] ms
+27-Jan-2020 15:47:52.378 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\manager]
+27-Jan-2020 15:47:52.477 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\manager] de l'application web s'est terminé en [99] ms
+27-Jan-2020 15:47:52.478 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\ROOT]
+27-Jan-2020 15:47:52.528 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\ROOT] de l'application web s'est terminé en [50] ms
+27-Jan-2020 15:47:52.534 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+27-Jan-2020 15:47:52.548 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["ajp-nio-8009"]
+27-Jan-2020 15:47:52.552 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [3 768] millisecondes
+27-Jan-2020 15:49:56.023 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.14
+27-Jan-2020 15:49:56.029 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:        Dec 6 2018 21:13:53 UTC
+27-Jan-2020 15:49:56.033 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.14.0
+27-Jan-2020 15:49:56.033 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 10
+27-Jan-2020 15:49:56.034 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version de lOS:        {0}
+27-Jan-2020 15:49:56.034 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Jan-2020 15:49:56.034 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk1.8.0_211\jre
+27-Jan-2020 15:49:56.034 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           1.8.0_211-b12
+27-Jan-2020 15:49:56.035 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+27-Jan-2020 15:49:56.035 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:49:56.035 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:49:56.036 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=Z:\2eme_annee\apache-tomcat-9.0.14\conf\logging.properties
+27-Jan-2020 15:49:56.036 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Jan-2020 15:49:56.036 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djdk.tls.ephemeralDHKeySize=2048
+27-Jan-2020 15:49:56.037 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Jan-2020 15:49:56.037 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dignore.endorsed.dirs=
+27-Jan-2020 15:49:56.038 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:49:56.042 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:49:56.043 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=Z:\2eme_annee\apache-tomcat-9.0.14\temp
+27-Jan-2020 15:49:56.044 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\app\product\11.2.0\client_1\bin;C:\Program Files\Addinsoft\XLSTAT\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Windows\CCM;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\doxygen\bin;C:\Program Files\leJOS EV3\bin;c:\Php7;c:\Php7\bin;C:\Program Files (x86)\PsychoPy2;C:\Program Files (x86)\PsychoPy2\DLLs;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\SASHome\Secure\ccme4;C:\Program Files\SASHome\x86\Secure\ccme4;C:\Windows\CCM;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\goldanig\AppData\Local\Microsoft\WindowsApps;;.]
+27-Jan-2020 15:49:56.576 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+27-Jan-2020 15:49:56.800 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["ajp-nio-8009"]
+27-Jan-2020 15:49:56.809 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 599] millisecondes
+27-Jan-2020 15:49:56.889 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+27-Jan-2020 15:49:56.890 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.14]
+27-Jan-2020 15:49:56.913 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\docs]
+27-Jan-2020 15:49:57.705 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\docs] de l'application web s'est terminé en [791] ms
+27-Jan-2020 15:49:57.706 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\examples]
+27-Jan-2020 15:49:59.348 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\examples] de l'application web s'est terminé en [1 641] ms
+27-Jan-2020 15:49:59.349 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\host-manager]
+27-Jan-2020 15:49:59.522 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\host-manager] de l'application web s'est terminé en [172] ms
+27-Jan-2020 15:49:59.523 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\manager]
+27-Jan-2020 15:49:59.615 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\manager] de l'application web s'est terminé en [92] ms
+27-Jan-2020 15:49:59.617 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\ROOT]
+27-Jan-2020 15:49:59.692 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\ROOT] de l'application web s'est terminé en [76] ms
+27-Jan-2020 15:49:59.704 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+27-Jan-2020 15:49:59.726 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["ajp-nio-8009"]
+27-Jan-2020 15:49:59.731 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [2 920] millisecondes
+27-Jan-2020 15:59:25.792 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.14
+27-Jan-2020 15:59:25.795 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:        Dec 6 2018 21:13:53 UTC
+27-Jan-2020 15:59:25.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.14.0
+27-Jan-2020 15:59:25.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 10
+27-Jan-2020 15:59:25.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version de lOS:        {0}
+27-Jan-2020 15:59:25.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Jan-2020 15:59:25.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk1.8.0_211\jre
+27-Jan-2020 15:59:25.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           1.8.0_211-b12
+27-Jan-2020 15:59:25.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+27-Jan-2020 15:59:25.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:59:25.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:59:25.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=Z:\2eme_annee\apache-tomcat-9.0.14\conf\logging.properties
+27-Jan-2020 15:59:25.798 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Jan-2020 15:59:25.798 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djdk.tls.ephemeralDHKeySize=2048
+27-Jan-2020 15:59:25.798 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Jan-2020 15:59:25.798 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dignore.endorsed.dirs=
+27-Jan-2020 15:59:25.798 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:59:25.799 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=Z:\2eme_annee\apache-tomcat-9.0.14
+27-Jan-2020 15:59:25.799 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=Z:\2eme_annee\apache-tomcat-9.0.14\temp
+27-Jan-2020 15:59:25.800 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\app\product\11.2.0\client_1\bin;C:\Program Files\Addinsoft\XLSTAT\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Windows\CCM;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\doxygen\bin;C:\Program Files\leJOS EV3\bin;c:\Php7;c:\Php7\bin;C:\Program Files (x86)\PsychoPy2;C:\Program Files (x86)\PsychoPy2\DLLs;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\SASHome\Secure\ccme4;C:\Program Files\SASHome\x86\Secure\ccme4;C:\Windows\CCM;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\goldanig\AppData\Local\Microsoft\WindowsApps;;.]
+27-Jan-2020 15:59:26.159 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+27-Jan-2020 15:59:26.342 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["ajp-nio-8009"]
+27-Jan-2020 15:59:26.347 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 201] millisecondes
+27-Jan-2020 15:59:26.411 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+27-Jan-2020 15:59:26.411 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.14]
+27-Jan-2020 15:59:26.430 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\docs]
+27-Jan-2020 15:59:27.023 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\docs] de l'application web s'est terminé en [592] ms
+27-Jan-2020 15:59:27.024 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\examples]
+27-Jan-2020 15:59:28.405 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\examples] de l'application web s'est terminé en [1 382] ms
+27-Jan-2020 15:59:28.407 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\host-manager]
+27-Jan-2020 15:59:28.512 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\host-manager] de l'application web s'est terminé en [106] ms
+27-Jan-2020 15:59:28.513 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\manager]
+27-Jan-2020 15:59:28.596 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\manager] de l'application web s'est terminé en [82] ms
+27-Jan-2020 15:59:28.598 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\ROOT]
+27-Jan-2020 15:59:28.668 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\ROOT] de l'application web s'est terminé en [69] ms
+27-Jan-2020 15:59:28.676 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+27-Jan-2020 15:59:28.695 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["ajp-nio-8009"]
+27-Jan-2020 15:59:28.700 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [2 352] millisecondes
+27-Jan-2020 16:05:24.468 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\Nouveau dossier]
+27-Jan-2020 16:05:24.583 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\Nouveau dossier] de l'application web s'est terminé en [115] ms
+27-Jan-2020 16:05:55.221 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Nouveau dossier]
+27-Jan-2020 16:05:55.287 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\TP1]
+27-Jan-2020 16:05:55.373 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\TP1] de l'application web s'est terminé en [85] ms
+27-Jan-2020 16:28:16.779 INFOS [http-nio-8080-exec-14] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP1] a démarré
+27-Jan-2020 16:28:16.929 INFOS [http-nio-8080-exec-14] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:29:45.754 INFOS [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP1] a démarré
+27-Jan-2020 16:29:45.846 INFOS [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:29:47.656 INFOS [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP1] a démarré
+27-Jan-2020 16:29:47.704 INFOS [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:35:45.707 INFOS [http-nio-8080-exec-32] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP1] a démarré
+27-Jan-2020 16:35:45.794 INFOS [http-nio-8080-exec-32] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:39:55.787 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/TP1]
+27-Jan-2020 16:39:55.834 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\TP11]
+27-Jan-2020 16:39:55.912 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\TP11] de l'application web s'est terminé en [78] ms
+27-Jan-2020 16:40:05.971 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\TP1]
+27-Jan-2020 16:40:06.049 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [Z:\2eme_annee\apache-tomcat-9.0.14\webapps\TP1] de l'application web s'est terminé en [78] ms
+27-Jan-2020 16:41:32.382 INFOS [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP1] a démarré
+27-Jan-2020 16:41:32.467 INFOS [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:41:35.236 INFOS [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP11] a démarré
+27-Jan-2020 16:41:35.300 INFOS [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:43:02.588 INFOS [http-nio-8080-exec-47] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP11] a démarré
+27-Jan-2020 16:43:02.682 INFOS [http-nio-8080-exec-47] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:49:58.104 INFOS [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP11] a démarré
+27-Jan-2020 16:49:58.203 INFOS [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:51:05.375 INFOS [http-nio-8080-exec-62] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP11] a démarré
+27-Jan-2020 16:51:05.471 INFOS [http-nio-8080-exec-62] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:53:40.593 INFOS [http-nio-8080-exec-68] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP11] a démarré
+27-Jan-2020 16:53:40.686 INFOS [http-nio-8080-exec-68] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:54:54.002 INFOS [http-nio-8080-exec-75] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TP11] a démarré
+27-Jan-2020 16:54:54.099 INFOS [http-nio-8080-exec-75] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+27-Jan-2020 16:56:53.066 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+27-Jan-2020 16:56:53.264 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["ajp-nio-8009"] est mis en pause
+27-Jan-2020 16:56:53.363 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+27-Jan-2020 16:56:53.473 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+27-Jan-2020 16:56:53.473 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["ajp-nio-8009"]
+27-Jan-2020 16:56:53.473 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+27-Jan-2020 16:56:53.473 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["ajp-nio-8009"]
