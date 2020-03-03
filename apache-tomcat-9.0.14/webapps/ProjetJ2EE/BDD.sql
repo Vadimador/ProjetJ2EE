@@ -45,3 +45,6 @@ INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible) VALUES (SEQDOCUMENT.N
 INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible) VALUES (SEQDOCUMENT.NEXTVAL,0,1);
 
 INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,Login, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'vadim','vadoom','vadime','Abonne');
+INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,Login, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'Gerome','mdp','Jerome','Abonne');
+
+commit;

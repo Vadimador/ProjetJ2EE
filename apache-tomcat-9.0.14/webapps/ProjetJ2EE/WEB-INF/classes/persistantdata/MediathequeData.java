@@ -17,7 +17,7 @@ public class MediathequeData implements PersistentMediatheque {
 		
 		private static String url_jdbc = "jdbc:oracle:thin:@localhost:1521:XE";
 		private static String login = "SYSTEM";
-		private static String pwd = "znbakst3";
+		private static String pwd = "Ob6o6cE6";
 		private static Connection connexionBD;
 		
 		
@@ -49,10 +49,11 @@ public class MediathequeData implements PersistentMediatheque {
 		}
 		
 		private static ResultSet test() throws Exception{
-			String query="SELECT nomUtilisateur FROM utilisateur WHERE IdUtilisateur = ?";
+			String query="SELECT nomUtilisateur FROM utilisateur";
 			PreparedStatement pstm = connexionBD.prepareStatement(query);
-			pstm.setInt(1, 1);
+			//pstm.setInt(1, 1);
 			ResultSet res = pstm.executeQuery();
+			//System.out.println(res.next());
 			return res;
 		}
 
@@ -120,14 +121,14 @@ public class MediathequeData implements PersistentMediatheque {
 			ResultSet res = test();
 			
 			if (res.next() == false) { 
-				System.out.println("ResultSet vide"); 
+				System.out.println("ResultSet vide");
 			}
 			else {
-				while(res.next()) {
+				do {
 					String nom = res.getString("nomUtilisateur");
 					
 					System.out.println("Le nom est : " + nom);
-				}
+				}while(res.next());
 			}
 		}
 }
