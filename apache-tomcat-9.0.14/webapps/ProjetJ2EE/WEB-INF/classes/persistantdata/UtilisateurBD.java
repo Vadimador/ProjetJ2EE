@@ -11,8 +11,9 @@ public class UtilisateurBD implements Utilisateur {
 	private String mdp;
 	private typeUtilisateur type;
 	
-	public UtilisateurBD(int id, String login, String password, typeUtilisateur type) {
+	public UtilisateurBD(int id,String nom, String login, String password, typeUtilisateur type) {
 		this.id = id;
+		this.nom = nom;
 		this.login = login;
 		this.mdp = password;
 		this.type = type;
@@ -20,20 +21,26 @@ public class UtilisateurBD implements Utilisateur {
 
 	@Override
 	public Object[] data() {
-		// TODO Auto-generated method stub
+		// ?????
 		return null;
 	}
-
+	
+	
 	@Override
 	public boolean isBibliothecaire() {
-		// TODO Auto-generated method stub
-		return false;
+		if(this.type == typeUtilisateur.bibliothécaire)
+			return true;
+		else
+			return false;
 	}
 
 	@Override
 	public String name() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.nom;
+	}
+	
+	public int getID() {
+		return this.id;
 	}
 
 }

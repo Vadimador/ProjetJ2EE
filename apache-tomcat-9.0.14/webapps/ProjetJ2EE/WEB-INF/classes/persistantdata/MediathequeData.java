@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import mediatek2020.*;
@@ -17,9 +19,16 @@ public class MediathequeData implements PersistentMediatheque {
 		
 		private static String url_jdbc = "jdbc:oracle:thin:@localhost:1521:XE";
 		private static String login = "SYSTEM";
-		private static String pwd = "Ob6o6cE6";
+		private static String pwd = "znbakst3";
 		private static Connection connexionBD;
+	
+		static {
+			initialization();
+		}
 		
+		public MediathequeData() {
+			
+		}
 		
 		/**
 		 * Fonction statique pour se connecter à la base de donnée Oracle
@@ -35,9 +44,6 @@ public class MediathequeData implements PersistentMediatheque {
 		/**
 		 * Initialisation au lancement de la classe
 		 */
-		static {
-			initialization();
-		}
 		
 		private static void initialization() {
 			Mediatheque.getInstance().setData(new MediathequeData());
@@ -48,18 +54,9 @@ public class MediathequeData implements PersistentMediatheque {
 			}
 		}
 		
-		private static ResultSet test() throws Exception{
-			String query="SELECT nomUtilisateur FROM utilisateur";
-			PreparedStatement pstm = connexionBD.prepareStatement(query);
-			//pstm.setInt(1, 1);
-			ResultSet res = pstm.executeQuery();
-			//System.out.println(res.next());
-			return res;
-		}
-
-		
+		//Recupere toutes les données d'un utilisateur qui se connecte
 		private static ResultSet infoUtilisateur(String login, String password) throws Exception {
-			String query = "SELECT idUtilisateur,NomUtilisateur,login, typeUtilisateur FROM utilisateur WHERE login = ? AND MotDePasse = ?";
+			String query = "SELECT * FROM utilisateur WHERE login = ? AND MotDePasse = ?";
 			PreparedStatement pstm = connexionBD.prepareStatement(query);
 			pstm.setString(1, login); 
 			pstm.setString(2, password);
@@ -67,29 +64,64 @@ public class MediathequeData implements PersistentMediatheque {
 			return res;
 		}
 		
-		
-		//Constructeur
-		public MediathequeData() {}
 
 		// renvoie la liste de tous les documents de la bibliothèque
 		@Override
 		public List<Document> tousLesDocuments() {
-			return null;
+			List<Document> liste = new ArrayList<>();
+			String query = "SELECT * FROM document";
+			try {
+				PreparedStatement pstm = connexionBD.prepareStatement(query);
+				ResultSet res = pstm.executeQuery();
+				
+				if (res.next() == false) { 
+					System.out.println("ResultSet vide");
+				}
+				else {
+					do {
+						int id = res.getInt("IdDocument");
+						
+						boolean stateReserved;
+						boolean stateAvailable;
+						
+						if(res.getInt("IsReserver") == 0)
+							stateReserved = false;
+						else
+							stateReserved = true;
+						
+						if(res.getInt("IsDisponible") == 0)
+							stateAvailable = false;
+						else
+							stateAvailable = true;
+						
+						int userID = res.getInt("UserID");
+						
+						liste.add(new DocumentBD(id, stateReserved, stateAvailable, userID));
+						
+						
+					}while(res.next());
+				}
+								
+			} catch (SQLException e) {
+				System.out.println("Erreur d'execution de la requete");
+			}
+			//La liste contient une liste de document avec les données de la bdd
+			return liste;
 		}
 
 		// va récupérer le User dans la BD et le renvoie
 		// si pas trouvé, renvoie null
 		@Override
-		public Utilisateur getUser(String login, String password) {
+		public UtilisateurBD getUser(String login, String password) {
 			try {
 				ResultSet res = infoUtilisateur(login, password);
 				
 				if(res.next()) {
-					int type = res.getInt("biblioUtilisateur");
+					int type = res.getInt("typeUtilisateur");
 					
 					switch(type) {
-						case 0 : return new UtilisateurBD(res.getInt("IdUtilisateur"), login, password, typeUtilisateur.abonné); 
-						case 1 : return new UtilisateurBD(res.getInt("IdUtilisateur"), login, password, typeUtilisateur.bibliothécaire); 
+						case 0 : return new UtilisateurBD(res.getInt("IdUtilisateur"),res.getString("nomUtilisateur"), login, password, typeUtilisateur.abonné); 
+						case 1 : return new UtilisateurBD(res.getInt("IdUtilisateur"),res.getString("nomUtilisateur"), login, password, typeUtilisateur.bibliothécaire); 
 						default : return null;
 					}
 				} else {
@@ -118,7 +150,7 @@ public class MediathequeData implements PersistentMediatheque {
 		
 		public static void main(String[] args) throws Exception {
 			//System.out.println(Mediatheque.getInstance().getUser("user1","user1").name());
-			ResultSet res = test();
+			/*ResultSet res = test();
 			
 			if (res.next() == false) { 
 				System.out.println("ResultSet vide");
@@ -129,6 +161,6 @@ public class MediathequeData implements PersistentMediatheque {
 					
 					System.out.println("Le nom est : " + nom);
 				}while(res.next());
-			}
+			}*/
 		}
 }

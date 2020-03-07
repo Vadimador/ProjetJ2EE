@@ -26,7 +26,8 @@ CREATE TABLE DOCUMENT
 (
 	IdDocument INTEGER PRIMARY KEY,
 	IsReserver INTEGER NOT NULL,
-	IsDisponible INTEGER NOT NULL
+	IsDisponible INTEGER NOT NULL,
+	UserID VARCHAR(30) NOT NULL
 )
 /
 
@@ -36,15 +37,18 @@ CREATE TABLE UTILISATEUR
 	NomUtilisateur VARCHAR(30) NOT NULL,
 	MotDePasse VARCHAR(30) NOT NULL,
 	Login VARCHAR(30) NOT NULL,
-	TypeUtilisateur VARCHAR(30) NOT NULL
+	TypeUtilisateur INTEGER NOT NULL
 )
 /
 
-INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible) VALUES (SEQDOCUMENT.NEXTVAL,0,1);
-INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible) VALUES (SEQDOCUMENT.NEXTVAL,0,1);
-INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible) VALUES (SEQDOCUMENT.NEXTVAL,0,1);
+ALTER TABLE DOCUMENT ADD CONSTRAINT FK_ID_UTILISATEUR FOREIGN KEY (UserName) REFERENCES UTILISATEUR(IdUi);
 
-INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,Login, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'vadim','vadoom','vadime','Abonne');
-INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,Login, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'Gerome','mdp','Jerome','Abonne');
+INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,Login, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'vadim','vadoom','vadime',1);
+INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,Login, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'Gerome','mdp','Jerome',0);
+
+INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible, UserName) VALUES (SEQDOCUMENT.NEXTVAL,0,1,'vadim');
+INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible, UserName) VALUES (SEQDOCUMENT.NEXTVAL,0,1,'vadim');
+INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible, UserName) VALUES (SEQDOCUMENT.NEXTVAL,0,1,'Gerome');
+
 
 commit;

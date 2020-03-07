@@ -1,7 +1,7 @@
 @echo off
 
-set CATALINA_HOME=Z:\2eme_annee\apache-tomcat-9.0.14
-set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+set CATALINA_HOME=G:\Descartes\2emeAnnee\Semestre2\Java J2EE\Projet\apache-tomcat-9.0.14
+set JAVA_HOME=C:\Program Files\Java\jre1.8.0_241
 rem Licensed to the Apache Software Foundation (ASF) under one or more
 rem contributor license agreements.  See the NOTICE file distributed with
 rem this work for additional information regarding copyright ownership.
