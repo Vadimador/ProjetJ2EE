@@ -1,0 +1,56 @@
+07-Mar-2020 20:46:09.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.14
+07-Mar-2020 20:46:09.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:        Dec 6 2018 21:13:53 UTC
+07-Mar-2020 20:46:09.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.14.0
+07-Mar-2020 20:46:09.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 10
+07-Mar-2020 20:46:09.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version de lOS:        {0}
+07-Mar-2020 20:46:09.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Mar-2020 20:46:09.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk-13.0.1
+07-Mar-2020 20:46:09.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           13.0.1+9
+07-Mar-2020 20:46:09.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+07-Mar-2020 20:46:09.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14
+07-Mar-2020 20:46:09.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14
+07-Mar-2020 20:46:09.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Mar-2020 20:46:09.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Mar-2020 20:46:09.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Mar-2020 20:46:09.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\conf\logging.properties
+07-Mar-2020 20:46:09.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Mar-2020 20:46:09.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djdk.tls.ephemeralDHKeySize=2048
+07-Mar-2020 20:46:09.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Mar-2020 20:46:09.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dignore.endorsed.dirs=
+07-Mar-2020 20:46:09.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14
+07-Mar-2020 20:46:09.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14
+07-Mar-2020 20:46:09.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\temp
+07-Mar-2020 20:46:09.075 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path: [C:\Program Files\Java\jdk-13.0.1\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\Program\Oracle\dbhomeXE\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Users\vadgo\AppData\Local\Microsoft\WindowsApps;;D:\Program Files (x86)\Microsoft VS Code\bin;.]
+07-Mar-2020 20:46:09.119 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+07-Mar-2020 20:46:09.620 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["ajp-nio-8009"]
+07-Mar-2020 20:46:09.624 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [866] millisecondes
+07-Mar-2020 20:46:09.656 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+07-Mar-2020 20:46:09.656 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.14]
+07-Mar-2020 20:46:09.666 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\docs]
+07-Mar-2020 20:46:10.116 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [241] millisecondes
+07-Mar-2020 20:46:10.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\docs] de l'application web s'est terminé en [465] ms
+07-Mar-2020 20:46:10.132 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\examples]
+07-Mar-2020 20:46:10.466 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\examples] de l'application web s'est terminé en [333] ms
+07-Mar-2020 20:46:10.466 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\host-manager]
+07-Mar-2020 20:46:10.496 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\host-manager] de l'application web s'est terminé en [30] ms
+07-Mar-2020 20:46:10.497 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\manager]
+07-Mar-2020 20:46:10.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\manager] de l'application web s'est terminé en [29] ms
+07-Mar-2020 20:46:10.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\ProjetJ2EE]
+07-Mar-2020 20:46:10.612 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\ProjetJ2EE] de l'application web s'est terminé en [86] ms
+07-Mar-2020 20:46:10.612 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\ROOT]
+07-Mar-2020 20:46:10.632 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\Documents\Cours\J2EE\TEST\apache-tomcat-9.0.14\webapps\ROOT] de l'application web s'est terminé en [20] ms
+07-Mar-2020 20:46:10.636 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+07-Mar-2020 20:46:10.643 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["ajp-nio-8009"]
+07-Mar-2020 20:46:10.647 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [1 022] millisecondes
+07-Mar-2020 20:57:38.916 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/ProjetJ2EE] a démarré
+07-Mar-2020 20:57:38.989 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+07-Mar-2020 20:57:45.978 INFO [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/ProjetJ2EE] a démarré
+07-Mar-2020 20:57:46.021 INFO [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+07-Mar-2020 21:13:20.350 INFO [http-nio-8080-exec-13] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/ProjetJ2EE] a démarré
+07-Mar-2020 21:13:20.391 INFO [http-nio-8080-exec-13] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+07-Mar-2020 21:16:42.274 INFO [http-nio-8080-exec-24] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/ProjetJ2EE] a démarré
+07-Mar-2020 21:16:42.309 INFO [http-nio-8080-exec-24] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+07-Mar-2020 21:17:37.172 INFO [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/ProjetJ2EE] a démarré
+07-Mar-2020 21:17:37.208 INFO [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+07-Mar-2020 21:19:16.209 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/ProjetJ2EE] a démarré
+07-Mar-2020 21:19:16.247 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé

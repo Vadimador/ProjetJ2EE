@@ -19,7 +19,7 @@ public class MediathequeData implements PersistentMediatheque {
 		
 		private static String url_jdbc = "jdbc:oracle:thin:@localhost:1521:XE";
 		private static String login = "SYSTEM";
-		private static String pwd = "znbakst3";
+		private static String pwd = "Ob6o6cE6";
 		private static Connection connexionBD;
 	
 		static {
@@ -56,7 +56,7 @@ public class MediathequeData implements PersistentMediatheque {
 		
 		//Recupere toutes les données d'un utilisateur qui se connecte
 		private static ResultSet infoUtilisateur(String login, String password) throws Exception {
-			String query = "SELECT * FROM utilisateur WHERE login = ? AND MotDePasse = ?";
+			String query = "SELECT * FROM utilisateur WHERE UserLogin = ? AND MotDePasse = ?";
 			PreparedStatement pstm = connexionBD.prepareStatement(query);
 			pstm.setString(1, login); 
 			pstm.setString(2, password);
@@ -64,7 +64,15 @@ public class MediathequeData implements PersistentMediatheque {
 			return res;
 		}
 		
-
+		private static ResultSet test() throws Exception{
+			String query="SELECT nomUtilisateur FROM utilisateur";
+			PreparedStatement pstm = connexionBD.prepareStatement(query);
+			//pstm.setInt(1, 1);
+			ResultSet res = pstm.executeQuery();
+			//System.out.println(res.next());
+			return res;
+		}
+		
 		// renvoie la liste de tous les documents de la bibliothèque
 		@Override
 		public List<Document> tousLesDocuments() {
@@ -150,7 +158,8 @@ public class MediathequeData implements PersistentMediatheque {
 		
 		public static void main(String[] args) throws Exception {
 			//System.out.println(Mediatheque.getInstance().getUser("user1","user1").name());
-			/*ResultSet res = test();
+			ResultSet res = test();
+			System.out.println(Mediatheque.getInstance().getUser("vadime","vadoom").name());
 			
 			if (res.next() == false) { 
 				System.out.println("ResultSet vide");
@@ -161,6 +170,6 @@ public class MediathequeData implements PersistentMediatheque {
 					
 					System.out.println("Le nom est : " + nom);
 				}while(res.next());
-			}*/
+			}
 		}
 }

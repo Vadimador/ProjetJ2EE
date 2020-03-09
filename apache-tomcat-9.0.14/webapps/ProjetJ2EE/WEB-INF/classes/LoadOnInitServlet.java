@@ -17,7 +17,7 @@ public class LoadOnInitServlet extends HttpServlet {
 	public void init(ServletConfig arg0) throws ServletException {
 		super.init(arg0);
 		try {
-			Class.forName("persistant.MediathequeData");
+			Class.forName("persistantdata.MediathequeData");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

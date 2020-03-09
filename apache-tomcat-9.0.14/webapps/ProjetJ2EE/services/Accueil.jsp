@@ -4,8 +4,9 @@
 <!DOCTYPE html>
 
 <% 
-Utilisateur user = request.getParameter("user_connecte");    
-session.getAttribute("user_connecte");
+//Utilisateur user = request.getParameter("user_connecte");    
+Utilisateur user = (Utilisateur) session.getAttribute("user_connecte"); // <- ne marche pas
+//session.getAttribute("user_connecte");
 
 String nom = user.name();
  %>
@@ -16,6 +17,6 @@ String nom = user.name();
         <title>Accueil</title>
     </head>
     <body>
-         <h1> Bienvenue <%=nom%> </h1> 
+         <h1> Bienvenue <%= nom %></h1> 
         </body>
 </html>
