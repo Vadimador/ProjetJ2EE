@@ -65,7 +65,7 @@ public class MediathequeData implements PersistentMediatheque {
 		}
 		
 		private static ResultSet test() throws Exception{
-			String query="SELECT nomUtilisateur FROM utilisateur";
+			String query="SELECT nomUtilisateur FROM utilisateur where typeutilisateur = 0";
 			PreparedStatement pstm = connexionBD.prepareStatement(query);
 			//pstm.setInt(1, 1);
 			ResultSet res = pstm.executeQuery();
@@ -118,7 +118,36 @@ public class MediathequeData implements PersistentMediatheque {
 			//La liste contient une liste de document avec les données de la bdd
 			return liste;
 		}
-
+		
+		public List<String> tousLesNomsDeDocuments() {
+			List<String> liste = new ArrayList<>();
+			String query = "SELECT NomDoc FROM document";
+			try {
+				PreparedStatement pstm = connexionBD.prepareStatement(query);
+				ResultSet res = pstm.executeQuery();
+				
+				if (res.next() == false) { 
+					System.out.println("ResultSet vide");
+				}
+				else {
+					do {
+						
+						
+						String nom = res.getString("NomDoc");
+						
+						liste.add(nom);
+						
+						
+					}while(res.next());
+				}
+								
+			} catch (SQLException e) {
+				System.out.println("Erreur d'execution de la requete");
+			}
+			//La liste contient une liste de document avec les données de la bdd
+			return liste;
+		}
+		
 		// va récupérer le User dans la BD et le renvoie
 		// si pas trouvé, renvoie null
 		@Override
@@ -130,8 +159,8 @@ public class MediathequeData implements PersistentMediatheque {
 					int type = res.getInt("typeUtilisateur");
 					
 					switch(type) {
-						case 0 : return new UtilisateurBD(res.getInt("IdUtilisateur"),res.getString("nomUtilisateur"), login, password, typeUtilisateur.abonné); 
-						case 1 : return new UtilisateurBD(res.getInt("IdUtilisateur"),res.getString("nomUtilisateur"), login, password, typeUtilisateur.bibliothécaire); 
+						case 0 : return new UtilisateurBD(res.getInt("IdUtilisateur"),res.getString("nomUtilisateur"), login, password, typeUtilisateur.bibliothécaire); 
+						case 1 : return new UtilisateurBD(res.getInt("IdUtilisateur"),res.getString("nomUtilisateur"), login, password, typeUtilisateur.abonné); 
 						default : return null;
 					}
 				} else {
@@ -161,7 +190,7 @@ public class MediathequeData implements PersistentMediatheque {
 		public static void main(String[] args) throws Exception {
 			//System.out.println(Mediatheque.getInstance().getUser("user1","user1").name());
 			ResultSet res = test();
-			System.out.println(Mediatheque.getInstance().getUser("vadime","vadoom").name());
+			//System.out.println(Mediatheque.getInstance().getUser("vadime","vadoom").name());
 			
 			if (res.next() == false) { 
 				System.out.println("ResultSet vide");
@@ -172,6 +201,12 @@ public class MediathequeData implements PersistentMediatheque {
 					
 					System.out.println("Le nom est : " + nom);
 				}while(res.next());
+			}
+			//Document doc = new DocumentBD(1,"tchoin",true,false,4);
+			//System.out.println((String) doc.data()[1]);
+			List<Document> listeDoc = Mediatheque.getInstance().tousLesDocuments();
+			for(Document doc : listeDoc){
+			        System.out.println(doc.data()[1]);
 			}
 		}
 }

@@ -46,6 +46,7 @@ public class ControleConnexion extends HttpServlet {
       		session.setAttribute("user_connecte", user);
       		
       		List<Document> listeDocuments = Mediatheque.getInstance().tousLesDocuments();
+      		//List<String> listeNomsDocuments =  Mediatheque.getInstance()
       		
       		if(user.isBibliothecaire()) {
       			session.setAttribute("listeDocs", listeDocuments);

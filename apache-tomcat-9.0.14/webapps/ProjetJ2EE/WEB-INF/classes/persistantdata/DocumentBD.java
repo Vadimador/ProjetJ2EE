@@ -25,7 +25,14 @@ public class DocumentBD implements Document{
 	
 	@Override
 	public Object[] data() {
-		return this.data;
+		Object[] o = new Object[5];
+		o[0] = this.id;
+		o[1] = this.nom;
+		o[2] = IsReserved;
+		o[3] = IsAvailable;
+		o[4] = userID;
+		
+		return o;
 	}
 	
 	public String getNom() {
