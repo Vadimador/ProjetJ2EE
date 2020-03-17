@@ -2,6 +2,7 @@ package services;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import mediatek2020.Mediatheque;
+import mediatek2020.items.Document;
 import mediatek2020.items.Utilisateur;
 
 
@@ -43,10 +45,19 @@ public class ControleConnexion extends HttpServlet {
       		
       		session.setAttribute("user_connecte", user);
       		
-      		getServletContext().getRequestDispatcher("/services/Accueil.jsp").forward(request, response);
+      		List<Document> listeDocuments = Mediatheque.getInstance().tousLesDocuments();
+      		
+      		if(user.isBibliothecaire()) {
+      			session.setAttribute("listeDocs", listeDocuments);
+      			getServletContext().getRequestDispatcher("/services/AccueilBiblio.jsp").forward(request, response);
+      		}
+      		else if(!user.isBibliothecaire()) {
+      			getServletContext().getRequestDispatcher("/services/AccueilAbo.jsp").forward(request, response);
+      		}
+      		
         }
         else {
-        	response.getWriter().print("else");
+        	response.getWriter().print("erreur");
         }
       
 	} 

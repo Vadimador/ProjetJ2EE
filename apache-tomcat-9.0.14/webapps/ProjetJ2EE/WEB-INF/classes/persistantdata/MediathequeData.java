@@ -89,6 +89,8 @@ public class MediathequeData implements PersistentMediatheque {
 					do {
 						int id = res.getInt("IdDocument");
 						
+						String nom = res.getString("NomDoc");
+						
 						boolean stateReserved;
 						boolean stateAvailable;
 						
@@ -104,7 +106,7 @@ public class MediathequeData implements PersistentMediatheque {
 						
 						int userID = res.getInt("UserID");
 						
-						liste.add(new DocumentBD(id, stateReserved, stateAvailable, userID));
+						liste.add(new DocumentBD(id,nom, stateReserved, stateAvailable, userID));
 						
 						
 					}while(res.next());

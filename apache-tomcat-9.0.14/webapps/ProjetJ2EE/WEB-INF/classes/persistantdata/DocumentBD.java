@@ -10,12 +10,14 @@ public class DocumentBD implements Document{
 	private Class< ? extends Document>[] data;
 	
 	private int id;
+	private String nom;
 	private boolean IsReserved;
 	private boolean IsAvailable;
 	private int userID;
 	
-	public DocumentBD(int id, boolean res, boolean avail, int ID) {
+	public DocumentBD(int id,String n, boolean res, boolean avail, int ID) {
 		this.id = id;
+		this.nom = n;
 		this.IsReserved = res;
 		this.IsAvailable = avail;
 		this.userID = ID;
@@ -23,8 +25,11 @@ public class DocumentBD implements Document{
 	
 	@Override
 	public Object[] data() {
-		// TODO Auto-generated method stub
 		return this.data;
+	}
+	
+	public String getNom() {
+		return this.nom;
 	}
 
 	@Override

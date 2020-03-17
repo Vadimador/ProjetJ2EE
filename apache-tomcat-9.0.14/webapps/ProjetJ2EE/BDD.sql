@@ -25,9 +25,10 @@ CACHE 20;
 CREATE TABLE DOCUMENT 
 (
 	IdDocument INTEGER PRIMARY KEY,
+	NomDoc VARCHAR(30) NOT NULL,
 	IsReserver INTEGER NOT NULL,
 	IsDisponible INTEGER NOT NULL,
-	UserID INTEGER NOT NULL
+	UserID INTEGER
 )
 /
 
@@ -46,9 +47,9 @@ ALTER TABLE DOCUMENT ADD CONSTRAINT FK_ID_UTILISATEUR FOREIGN KEY (UserID) REFER
 INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,UserLogin, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'vadim','vadoom','vadime',1);
 INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,UserLogin, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'Gerome','mdp','Jerome',0);
 
-INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,0,1,1);
-INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,0,1,1);
-INSERT INTO DOCUMENT (IdDocument,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,0,1,2);
+INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Vadim mangea Vadoom',0,1,1);
+INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Vadim le fou',0,1,null);
+INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Il etait une fois Vadim',0,1,2);
 
 
 commit;
