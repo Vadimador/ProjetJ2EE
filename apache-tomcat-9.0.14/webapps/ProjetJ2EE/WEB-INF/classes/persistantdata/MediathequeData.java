@@ -181,18 +181,24 @@ public class MediathequeData implements PersistentMediatheque {
 		@Override
 		public void nouveauDocument(int id, Object... arg1) {
 			//String query = "INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,?,0,1,?);";
-			String query = "INSERT INTO DOCUMENT (NomDoc,isReserver, isDisponible, UserID) VALUES (?,0,1,?);";
-			
+			//String query = "INSERT INTO DOCUMENT (NomDoc,isReserver, isDisponible, UserID) VALUES (?,0,1,?)";
+			String sqlIdentifier = "select SEQDOCUMENT.NEXTVAL from dual";
 			try {
-				PreparedStatement pstm = connexionBD.prepareStatement(query);
-				ResultSet res = pstm.executeQuery();
-				
-				pstm.setString(1, (String) arg1[0]); 
-				pstm.setString(2, null);
+				PreparedStatement pst = connexionBD.prepareStatement(sqlIdentifier);
+				ResultSet rs = pst.executeQuery();
+				if(rs.next()) {
+				   int myId = rs.getInt(1);
+				   String query = "INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (?,?,0,1,NULL)";
+				   	PreparedStatement pstm = connexionBD.prepareStatement(query);
+				   	pstm.setInt(1,myId);
+				   	pstm.setString(2, (String)arg1[0]);
+				   	pstm.executeUpdate();
+				}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			
 		}
 		
 		public void ajoutDoc(String nom) {
@@ -214,12 +220,11 @@ public class MediathequeData implements PersistentMediatheque {
 					System.out.println("Le nom est : " + nom);
 				}while(res.next());
 			}
-			//Document doc = new DocumentBD(1,"tchoin",true,false,4);
-			//System.out.println((String) doc.data()[1]);
-			List<Document> listeDoc = Mediatheque.getInstance().tousLesDocuments();
-			for(Document doc : listeDoc){
-			        System.out.println(doc.data()[1]);
-			}
+			
+			
+			
+			
+			
 		}
 
 }

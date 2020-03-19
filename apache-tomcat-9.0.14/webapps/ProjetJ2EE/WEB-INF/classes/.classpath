@@ -6,8 +6,8 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="G:/Descartes/2emeAnnee/Semestre2/Java J2EE/JEEEE/apache-tomcat-9.0.14/webapps/ProjetJ2EE/WEB-INF/lib/ojdbc6.jar"/>
-	<classpathentry kind="lib" path="G:/Descartes/2emeAnnee/Semestre2/Java J2EE/JEEEE/apache-tomcat-9.0.14/webapps/ProjetJ2EE/WEB-INF/lib/mediathek.jar"/>
-	<classpathentry kind="lib" path="G:/Descartes/2emeAnnee/Semestre2/Java J2EE/JEEEE/apache-tomcat-9.0.14/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Cours/J2EE/PROJECT2/apache-tomcat-9.0.14/webapps/ProjetJ2EE/WEB-INF/lib/mediathek.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Cours/J2EE/PROJECT2/apache-tomcat-9.0.14/webapps/ProjetJ2EE/WEB-INF/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Cours/J2EE/PROJECT2/apache-tomcat-9.0.14/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
