@@ -119,34 +119,7 @@ public class MediathequeData implements PersistentMediatheque {
 			return liste;
 		}
 		
-		public List<String> tousLesNomsDeDocuments() {
-			List<String> liste = new ArrayList<>();
-			String query = "SELECT NomDoc FROM document";
-			try {
-				PreparedStatement pstm = connexionBD.prepareStatement(query);
-				ResultSet res = pstm.executeQuery();
-				
-				if (res.next() == false) { 
-					System.out.println("ResultSet vide");
-				}
-				else {
-					do {
-						
-						
-						String nom = res.getString("NomDoc");
-						
-						liste.add(nom);
-						
-						
-					}while(res.next());
-				}
-								
-			} catch (SQLException e) {
-				System.out.println("Erreur d'execution de la requete");
-			}
-			//La liste contient une liste de document avec les données de la bdd
-			return liste;
-		}
+		
 		
 		// va récupérer le User dans la BD et le renvoie
 		// si pas trouvé, renvoie null
@@ -176,16 +149,55 @@ public class MediathequeData implements PersistentMediatheque {
 		// si pas trouvé, renvoie null
 		@Override
 		public Document getDocument(int numDocument) {
+			String query = "SELECT * FROM document WHERE IdDocument='numDocument'";
+			PreparedStatement pstm;
+			try {
+				pstm = connexionBD.prepareStatement(query);
+				
+				ResultSet res = pstm.executeQuery();
+				
+				if (res.next() == false) { 
+					System.out.println("ResultSet vide");
+				}
+				else {
+					do {
+						int iddoc = res.getInt("IdDocument ");
+						String nom = res.getString("NomDoc ");
+						boolean reserved = res.getBoolean("IsReserver ");
+						boolean available = res.getBoolean("IsDisponible");
+						int iduser = res.getInt("UserID ");
+						
+						return new DocumentBD(iddoc, nom, reserved, available, iduser);
+					}while(res.next());
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			
 			return null;
 		}
-
+		
 		@Override
-		public void nouveauDocument(int type, Object... args) {
-			// args[0] -> le titre
-			// args [1] --> l'auteur
-			// etc...
+		public void nouveauDocument(int id, Object... arg1) {
+			//String query = "INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,?,0,1,?);";
+			String query = "INSERT INTO DOCUMENT (NomDoc,isReserver, isDisponible, UserID) VALUES (?,0,1,?);";
+			
+			try {
+				PreparedStatement pstm = connexionBD.prepareStatement(query);
+				ResultSet res = pstm.executeQuery();
+				
+				pstm.setString(1, (String) arg1[0]); 
+				pstm.setString(2, null);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
+		public void ajoutDoc(String nom) {
+			
+		}
 		
 		public static void main(String[] args) throws Exception {
 			//System.out.println(Mediatheque.getInstance().getUser("user1","user1").name());
@@ -209,4 +221,5 @@ public class MediathequeData implements PersistentMediatheque {
 			        System.out.println(doc.data()[1]);
 			}
 		}
+
 }

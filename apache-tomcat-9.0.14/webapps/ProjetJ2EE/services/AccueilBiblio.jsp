@@ -5,14 +5,11 @@
 
 <!DOCTYPE html>
 
-<% 
-//Utilisateur user = request.getParameter("user_connecte");    
+<%    
 Utilisateur user = (Utilisateur) session.getAttribute("user_connecte"); // <- ne marche pas
-//session.getAttribute("user_connecte");
 
 String nom = user.name();
 List<Document> listeDoc = (List<Document>) session.getAttribute("listeDocs");
-//String nomDoc = (String) listeDoc.get(0).data()[1];
 %>
  
 <html>
@@ -31,7 +28,17 @@ List<Document> listeDoc = (List<Document>) session.getAttribute("listeDocs");
 					<option><%= doc.data()[1] %></option> 
 				<% } %>
 			</select>
-			
 		</form>
+		
+		<br><br><br>
+		
+		<h2>Pour ajouter un nouveau document, veuillez remplir ces champs</h2>
+		
+		<form action="/ProjetJ2EE/ajoutDoc" method="post">
+                <center>Nom du document : <input type="text" name="nomDoc"></center>
+                <br>
+                <center> <input type="submit" value="submit"></center>
+        </form>
+		
     </body>
 </html>
