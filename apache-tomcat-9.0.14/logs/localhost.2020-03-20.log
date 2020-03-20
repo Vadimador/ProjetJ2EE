@@ -1,7 +1,7 @@
-19-Mar-2020 17:47:35.079 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-19-Mar-2020 17:47:35.079 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-19-Mar-2020 17:47:35.081 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1643d68f')
-19-Mar-2020 18:00:42.975 WARNING [http-nio-8080-exec-15] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [D6B09E113BDB9FF89BDA85F9D8D89595]
+20-Mar-2020 17:58:49.792 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Mar-2020 17:58:49.792 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Mar-2020 17:58:49.794 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@186978a6')
+20-Mar-2020 18:02:38.270 WARNING [http-nio-8080-exec-15] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
  java.io.NotSerializableException: persistantdata.DocumentBD
 	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
 	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
@@ -57,8 +57,8 @@
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 
-19-Mar-2020 18:00:43.191 WARNING [http-nio-8080-exec-15] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [D6B09E113BDB9FF89BDA85F9D8D89595]
-19-Mar-2020 18:03:47.971 WARNING [http-nio-8080-exec-23] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [D6B09E113BDB9FF89BDA85F9D8D89595]
+20-Mar-2020 18:02:38.477 WARNING [http-nio-8080-exec-15] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
+20-Mar-2020 18:07:18.905 WARNING [http-nio-8080-exec-22] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
  java.io.NotSerializableException: persistantdata.DocumentBD
 	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
 	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
@@ -114,8 +114,8 @@
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 
-19-Mar-2020 18:03:48.174 WARNING [http-nio-8080-exec-23] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [D6B09E113BDB9FF89BDA85F9D8D89595]
-19-Mar-2020 18:05:01.050 WARNING [http-nio-8080-exec-32] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [D6B09E113BDB9FF89BDA85F9D8D89595]
+20-Mar-2020 18:07:19.101 WARNING [http-nio-8080-exec-22] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
+20-Mar-2020 18:15:21.778 WARNING [http-nio-8080-exec-35] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
  java.io.NotSerializableException: persistantdata.DocumentBD
 	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
 	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
@@ -171,8 +171,8 @@
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 
-19-Mar-2020 18:05:01.238 WARNING [http-nio-8080-exec-32] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [D6B09E113BDB9FF89BDA85F9D8D89595]
-19-Mar-2020 18:05:20.094 WARNING [http-nio-8080-exec-37] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [D6B09E113BDB9FF89BDA85F9D8D89595]
+20-Mar-2020 18:15:21.976 WARNING [http-nio-8080-exec-35] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
+20-Mar-2020 18:17:23.141 WARNING [http-nio-8080-exec-48] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
  java.io.NotSerializableException: persistantdata.DocumentBD
 	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
 	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
@@ -228,8 +228,8 @@
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 
-19-Mar-2020 18:05:20.290 WARNING [http-nio-8080-exec-37] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [D6B09E113BDB9FF89BDA85F9D8D89595]
-19-Mar-2020 18:44:37.631 WARNING [http-nio-8080-exec-53] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [DEBEE3AF882DCC820134975AD01897AC]
+20-Mar-2020 18:17:23.326 WARNING [http-nio-8080-exec-48] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
+20-Mar-2020 18:19:57.909 WARNING [http-nio-8080-exec-54] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
  java.io.NotSerializableException: persistantdata.DocumentBD
 	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
 	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
@@ -285,7 +285,178 @@
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 
-19-Mar-2020 18:44:37.822 WARNING [http-nio-8080-exec-53] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [DEBEE3AF882DCC820134975AD01897AC]
-19-Mar-2020 20:28:50.664 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-19-Mar-2020 20:28:50.664 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-19-Mar-2020 20:28:50.666 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1643d68f')
+20-Mar-2020 18:19:58.098 WARNING [http-nio-8080-exec-54] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
+20-Mar-2020 18:25:06.882 WARNING [http-nio-8080-exec-68] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
+ java.io.NotSerializableException: persistantdata.DocumentBD
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
+	at java.base/java.util.ArrayList.writeObject(ArrayList.java:863)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base/java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1130)
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1497)
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433)
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1667)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1065)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:315)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:267)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:382)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5349)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3729)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1120)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:639)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:217)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:607)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:53)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+20-Mar-2020 18:25:07.070 WARNING [http-nio-8080-exec-68] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [E0788A6C637EAE73AB828BFA1A91C654]
+20-Mar-2020 18:26:41.586 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Mar-2020 18:26:41.586 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Mar-2020 18:26:41.587 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1643d68f')
+20-Mar-2020 19:04:40.150 WARNING [http-nio-8080-exec-26] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [CEE27D6D58A497D149C7544E87908170]
+ java.io.NotSerializableException: persistantdata.DocumentBD
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
+	at java.base/java.util.ArrayList.writeObject(ArrayList.java:863)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base/java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1130)
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1497)
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433)
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1667)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1065)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:315)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:267)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:382)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5349)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3729)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1120)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:639)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:217)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:607)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:53)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+20-Mar-2020 19:04:40.349 WARNING [http-nio-8080-exec-26] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [CEE27D6D58A497D149C7544E87908170]
+20-Mar-2020 19:05:49.788 WARNING [http-nio-8080-exec-34] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session [listeDocs] pour la session [CEE27D6D58A497D149C7544E87908170]
+ java.io.NotSerializableException: persistantdata.DocumentBD
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
+	at java.base/java.util.ArrayList.writeObject(ArrayList.java:863)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base/java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1130)
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1497)
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433)
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1667)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1065)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:315)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:267)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:382)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5349)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3729)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1120)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:639)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:217)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:607)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:53)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+20-Mar-2020 19:05:49.982 WARNING [http-nio-8080-exec-34] org.apache.catalina.session.StandardSession.doReadObject Impossible de désérialiser l'attribut de session [listeDocs] pour la session [CEE27D6D58A497D149C7544E87908170]
