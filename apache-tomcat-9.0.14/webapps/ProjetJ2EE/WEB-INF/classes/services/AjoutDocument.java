@@ -28,12 +28,15 @@ public class AjoutDocument extends HttpServlet {
   		HttpSession session = request.getSession(true);
 
 		//Ajout d'un doc à faire
-		String docName = request.getParameter("nomDoc");
+  		nom = request.getParameter("nomDoc");
 		
 		//le 1er argument ne sert à rien car je ne l'utilise pas
-		Mediatheque.getInstance().nouveauDocument(1, docName);
+		Mediatheque.getInstance().nouveauDocument(1, nom);
+		
+		//On actualise la liste
 		List<Document> listeDocuments = Mediatheque.getInstance().tousLesDocuments();
 		session.setAttribute("listeDocs", listeDocuments);
+		
 		getServletContext().getRequestDispatcher("/services/AccueilBiblio.jsp").forward(request, response);
 	}
 }

@@ -1,5 +1,6 @@
 package persistantdata;
 
+import mediatek2020.Mediatheque;
 import mediatek2020.items.Document;
 import mediatek2020.items.EmpruntException;
 import mediatek2020.items.ReservationException;
@@ -13,7 +14,7 @@ public class DocumentBD implements Document{
 	private String nom;
 	private boolean IsReserved;
 	private boolean IsAvailable;
-	private int userID;
+	private Integer userID;
 	
 	public DocumentBD(int id,String n, boolean res, boolean avail, int ID) {
 		this.id = id;
@@ -34,28 +35,28 @@ public class DocumentBD implements Document{
 		
 		return o;
 	}
-	
-	public String getNom() {
-		return this.nom;
-	}
 
 	@Override
 	public void emprunter(Utilisateur user) throws EmpruntException {
-		if(this.IsReserved && this.userID == ((UtilisateurBD) user).getID()) {
+		if(this.IsReserved && this.userID == (int) user.data()[0]) {
 			this.IsAvailable = false;
 		}
 	}
 
 	@Override
 	public void rendre(Utilisateur user) throws RetourException {
-		
+		if(!this.IsAvailable && this.userID == (int) user.data()[0]) {
+			this.IsAvailable = true;
+			this.IsReserved = false;
+			this.userID = null;
+		}
 	}
 
 	@Override
 	public void reserver(Utilisateur user) throws ReservationException {
 		if(this.IsAvailable && !this.IsReserved && user == null) {
 			this.IsReserved = true;
-			this.userID = ((UtilisateurBD) user).getID();
+			this.userID = (int) user.data()[0];
 		}
 	}
 

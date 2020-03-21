@@ -119,8 +119,6 @@ public class MediathequeData implements PersistentMediatheque {
 			return liste;
 		}
 		
-		
-		
 		// va récupérer le User dans la BD et le renvoie
 		// si pas trouvé, renvoie null
 		@Override
@@ -201,10 +199,7 @@ public class MediathequeData implements PersistentMediatheque {
 			
 		}
 		
-		public void ajoutDoc(String nom) {
-			
-		}
-		
+		//Pour faire des tests
 		public static void main(String[] args) throws Exception {
 			//System.out.println(Mediatheque.getInstance().getUser("user1","user1").name());
 			ResultSet res = test();

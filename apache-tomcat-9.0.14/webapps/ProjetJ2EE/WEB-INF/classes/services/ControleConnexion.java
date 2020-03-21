@@ -2,6 +2,7 @@ package services;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -53,6 +54,25 @@ public class ControleConnexion extends HttpServlet {
       			getServletContext().getRequestDispatcher("/services/AccueilBiblio.jsp").forward(request, response);
       		}
       		else if(!user.isBibliothecaire()) {
+      			List<Document> docsAvailable = new ArrayList<>();
+      			List<Document> docsToReturn = new ArrayList<>();
+      			
+      			for(Document doc : listeDocuments) {
+      				//Si un doc n'a pas de propriétaire
+      				if(doc.data()[4] == null) {
+      					docsAvailable.add(doc);
+      				}
+      			}
+      			
+      			for(Document doc : listeDocuments) {
+      				//Si un doc n'a pas de propriétaire
+      				if(doc.data()[4] == user.data()[0]) {
+      					docsToReturn.add(doc);
+      				}
+      			}
+      			
+      			session.setAttribute("listeDocToReturn", docsToReturn);
+      			session.setAttribute("listeDocDispo", docsAvailable);
       			getServletContext().getRequestDispatcher("/services/AccueilAbo.jsp").forward(request, response);
       		}
       		

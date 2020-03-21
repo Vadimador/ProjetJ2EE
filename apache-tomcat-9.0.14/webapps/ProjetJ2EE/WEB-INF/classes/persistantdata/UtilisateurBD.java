@@ -21,8 +21,14 @@ public class UtilisateurBD implements Utilisateur {
 
 	@Override
 	public Object[] data() {
-		// ?????
-		return null;
+		Object[] o = new Object[5];
+		o[0] = this.id;
+		o[1] = this.nom;
+		o[2] = this.login;
+		o[3] = this.mdp;
+		o[4] = this.type;
+		
+		return o;
 	}
 	
 	
@@ -37,10 +43,6 @@ public class UtilisateurBD implements Utilisateur {
 	@Override
 	public String name() {
 		return this.nom;
-	}
-	
-	public int getID() {
-		return this.id;
 	}
 
 }
