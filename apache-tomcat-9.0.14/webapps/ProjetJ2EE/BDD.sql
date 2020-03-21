@@ -48,9 +48,10 @@ INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,UserLogin, Typ
 INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,UserLogin, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'Gerome','mdp','Jerome',0);
 INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,UserLogin, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'anthony','antho','entoni',1);
 
-INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Vadim mangea Vadoom',0,0,1);
-INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Vadim le fou',0,1,null);
+INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Romeo et Juliette en vacances',0,0,1);
+INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Un jour sans nuit',0,1,null);
 INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Il etait une fois Vadim',0,1,null);
+INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'50 nuances de jaune fluo',0,1,null);
 
 
 commit;

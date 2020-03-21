@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 
 <%    
-Utilisateur user = (Utilisateur) session.getAttribute("user_connecte"); // <- ne marche pas
+Utilisateur user = (Utilisateur) session.getAttribute("user_connecte");
 
 String nom = user.name();
 List<Document> listeDoc = (List<Document>) session.getAttribute("listeDocs");

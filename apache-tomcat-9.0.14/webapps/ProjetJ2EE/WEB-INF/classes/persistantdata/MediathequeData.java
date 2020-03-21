@@ -67,9 +67,9 @@ public class MediathequeData implements PersistentMediatheque {
 		private static ResultSet test() throws Exception{
 			String query="SELECT nomUtilisateur FROM utilisateur where typeutilisateur = 0";
 			PreparedStatement pstm = connexionBD.prepareStatement(query);
-			//pstm.setInt(1, 1);
+			
 			ResultSet res = pstm.executeQuery();
-			//System.out.println(res.next());
+			
 			return res;
 		}
 		
@@ -179,8 +179,6 @@ public class MediathequeData implements PersistentMediatheque {
 		
 		@Override
 		public void nouveauDocument(int id, Object... arg1) {
-			//String query = "INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,?,0,1,?);";
-			//String query = "INSERT INTO DOCUMENT (NomDoc,isReserver, isDisponible, UserID) VALUES (?,0,1,?)";
 			String sqlIdentifier = "select SEQDOCUMENT.NEXTVAL from dual";
 			try {
 				PreparedStatement pst = connexionBD.prepareStatement(sqlIdentifier);
@@ -230,38 +228,9 @@ public class MediathequeData implements PersistentMediatheque {
 				
 				pst.executeUpdate();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			/*
-			 * IsReserver INTEGER NOT NULL,
-	IsDisponible INTEGER NOT NULL,
-	UserID INTEGER*/
 		}
 		
-		//Pour faire des tests
-		public static void main(String[] args) throws Exception {
-			//System.out.println(Mediatheque.getInstance().getUser("user1","user1").name());
-			ResultSet res = test();
-			//System.out.println(Mediatheque.getInstance().getUser("vadime","vadoom").name());
-			
-			if (res.next() == false) { 
-				System.out.println("ResultSet vide");
-			}
-			else {
-				do {
-					String nom = res.getString("nomUtilisateur");
-					
-					System.out.println("Le nom est : " + nom);
-				}while(res.next());
-			}
-			
-			
-			Document d = Mediatheque.getInstance().getDocument(1);
-			
-			System.out.println(d.data()[4]);
-			
-			
-		}
 
 }
