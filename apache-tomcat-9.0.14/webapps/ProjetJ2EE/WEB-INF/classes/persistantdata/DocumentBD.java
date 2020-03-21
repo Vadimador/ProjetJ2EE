@@ -38,25 +38,37 @@ public class DocumentBD implements Document{
 
 	@Override
 	public void emprunter(Utilisateur user) throws EmpruntException {
-		if(this.IsReserved && this.userID == (int) user.data()[0]) {
-			this.IsAvailable = false;
+		synchronized (this) {
+			if (!this.IsReserved && this.IsAvailable) {
+				this.IsAvailable = false;
+				this.userID = (int) user.data()[0];
+				MediathequeData.updateDocument(this);
+			} else if (this.IsReserved && this.IsAvailable && this.userID == (int) user.data()[0]) {
+				this.IsAvailable = false;
+				MediathequeData.updateDocument(this);
+			}
 		}
 	}
 
 	@Override
 	public void rendre(Utilisateur user) throws RetourException {
-		if(!this.IsAvailable && this.userID == (int) user.data()[0]) {
-			this.IsAvailable = true;
-			this.IsReserved = false;
-			this.userID = null;
+		synchronized (this) {
+			if (!this.IsAvailable && this.userID == (int) user.data()[0]) {
+				this.IsAvailable = true;
+				this.IsReserved = false;
+				this.userID = null;
+				MediathequeData.updateDocument(this);
+			}
 		}
 	}
 
 	@Override
 	public void reserver(Utilisateur user) throws ReservationException {
-		if(this.IsAvailable && !this.IsReserved && user == null) {
-			this.IsReserved = true;
-			this.userID = (int) user.data()[0];
+		synchronized (this) {
+			if (this.IsAvailable && !this.IsReserved && user == null) {
+				this.IsReserved = true;
+				this.userID = (int) user.data()[0];
+			}
 		}
 	}
 

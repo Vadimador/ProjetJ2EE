@@ -46,10 +46,11 @@ ALTER TABLE DOCUMENT ADD CONSTRAINT FK_ID_UTILISATEUR FOREIGN KEY (UserID) REFER
 
 INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,UserLogin, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'vadim','vadoom','vadime',1);
 INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,UserLogin, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'Gerome','mdp','Jerome',0);
+INSERT INTO UTILISATEUR (IdUtilisateur,NomUtilisateur, MotDePasse,UserLogin, TypeUtilisateur) VALUES (SEQUTILISATEUR.NEXTVAL,'anthony','antho','entoni',1);
 
-INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Vadim mangea Vadoom',0,1,1);
+INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Vadim mangea Vadoom',0,0,1);
 INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Vadim le fou',0,1,null);
-INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Il etait une fois Vadim',0,1,2);
+INSERT INTO DOCUMENT (IdDocument,NomDoc,isReserver, isDisponible, UserID) VALUES (SEQDOCUMENT.NEXTVAL,'Il etait une fois Vadim',0,1,null);
 
 
 commit;

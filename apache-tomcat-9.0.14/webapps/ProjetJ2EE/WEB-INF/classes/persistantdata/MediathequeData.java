@@ -147,11 +147,12 @@ public class MediathequeData implements PersistentMediatheque {
 		// si pas trouvé, renvoie null
 		@Override
 		public Document getDocument(int numDocument) {
-			String query = "SELECT * FROM document WHERE IdDocument='numDocument'";
+			String query = "SELECT * FROM document WHERE IdDocument = ?";
 			PreparedStatement pstm;
+			
 			try {
 				pstm = connexionBD.prepareStatement(query);
-				
+				pstm.setInt(1, numDocument);
 				ResultSet res = pstm.executeQuery();
 				
 				if (res.next() == false) { 
@@ -159,11 +160,11 @@ public class MediathequeData implements PersistentMediatheque {
 				}
 				else {
 					do {
-						int iddoc = res.getInt("IdDocument ");
-						String nom = res.getString("NomDoc ");
-						boolean reserved = res.getBoolean("IsReserver ");
+						int iddoc = res.getInt("IdDocument");
+						String nom = res.getString("NomDoc");
+						boolean reserved = res.getBoolean("IsReserver");
 						boolean available = res.getBoolean("IsDisponible");
-						int iduser = res.getInt("UserID ");
+						int iduser = res.getInt("UserID");
 						
 						return new DocumentBD(iddoc, nom, reserved, available, iduser);
 					}while(res.next());
@@ -199,6 +200,45 @@ public class MediathequeData implements PersistentMediatheque {
 			
 		}
 		
+		public static void updateDocument(Document d) {
+			String query = "UPDATE DOCUMENT SET IsReserver = ?, IsDisponible = ?,  UserID = ? WHERE IdDocument = ?";
+			try {
+				PreparedStatement pst = connexionBD.prepareStatement(query);
+				if((boolean)d.data()[2] == false) {
+					pst.setInt(1, 0);
+				}
+				else {
+					pst.setInt(1, 1);
+				}
+				
+				if((boolean)d.data()[3] == false) {
+					pst.setInt(2, 0);
+				}
+				else {
+					pst.setInt(2, 1);
+				}
+				
+				if((Integer)d.data()[4] == null) {
+					pst.setNull(3, java.sql.Types.INTEGER);
+				}
+				else {
+					pst.setInt(3, (Integer)d.data()[4]);
+				}
+				
+				
+				pst.setInt(4, (int)d.data()[0]);
+				
+				pst.executeUpdate();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			/*
+			 * IsReserver INTEGER NOT NULL,
+	IsDisponible INTEGER NOT NULL,
+	UserID INTEGER*/
+		}
+		
 		//Pour faire des tests
 		public static void main(String[] args) throws Exception {
 			//System.out.println(Mediatheque.getInstance().getUser("user1","user1").name());
@@ -217,7 +257,9 @@ public class MediathequeData implements PersistentMediatheque {
 			}
 			
 			
+			Document d = Mediatheque.getInstance().getDocument(1);
 			
+			System.out.println(d.data()[4]);
 			
 			
 		}

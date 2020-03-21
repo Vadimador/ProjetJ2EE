@@ -33,7 +33,7 @@ public class EmprunterDocument extends HttpServlet {
 		HttpSession session = request.getSession(true);
 
 		//doc à emprunter
-  		numDoc = request.getParameter("docNumberAvailable");
+  		numDoc = request.getParameter("docAvailable");
   		
   		//Emrpunt du document
   		Document doc = Mediatheque.getInstance().getDocument(Integer.parseInt(numDoc));
@@ -48,23 +48,31 @@ public class EmprunterDocument extends HttpServlet {
   		List<Document> listeDocuments = Mediatheque.getInstance().tousLesDocuments();
   		List<Document> docsAvailable = new ArrayList<>();
 		List<Document> docsToReturn = new ArrayList<>();
-			
-			for(Document docu : listeDocuments) {
-				//Si un doc n'a pas de propriétaire
-				if(docu.data()[4] == null) {
-					docsAvailable.add(docu);
-				}
+		
+		
+		
+		
+		for(Document docu : listeDocuments) {
+			//Si un doc n'a pas de propriétaire
+			if((int)docu.data()[4] == 0) {
+				docsAvailable.add(docu);
 			}
-			
-			for(Document docu : listeDocuments) {
-				//Si un doc n'a pas de propriétaire
-				if(docu.data()[4] == currentUser.data()[0]) {
-					docsToReturn.add(docu);
-				}
+		}
+		
+		for(Document docu : listeDocuments) {
+			//Si un doc n'a pas de propriétaire
+			if(docu.data()[4] == currentUser.data()[0]) {
+				docsToReturn.add(docu);
 			}
-			
-			session.setAttribute("listeDocToReturn", docsToReturn);
-			session.setAttribute("listeDocDispo", docsAvailable);
-		getServletContext().getRequestDispatcher("/services/AccueilBiblio.jsp").forward(request, response);
+		}
+		
+		String disabledOrNotR = (docsToReturn.size() <= 0)?"disabled":"";
+		String disabledOrNotA = (docsAvailable.size() <= 0)?"disabled":"";
+		
+		session.setAttribute("listeDocToReturn", docsToReturn);
+		session.setAttribute("listeDocDispo", docsAvailable);
+		session.setAttribute("disabledR", disabledOrNotR);
+		session.setAttribute("disabledA", disabledOrNotA);
+		getServletContext().getRequestDispatcher("/services/AccueilAbo.jsp").forward(request, response);
 	}
 }

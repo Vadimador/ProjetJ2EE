@@ -35,7 +35,7 @@ public class RendreDocument extends HttpServlet{
 		Utilisateur currentUser = (Utilisateur) session.getAttribute("user_connecte");
 		
 		//doc à emprunter
-  		numDoc = request.getParameter("docNumberToReturn");
+  		numDoc = request.getParameter("docToReturn");
   		
 		//Doc à rendre
   		Document doc = Mediatheque.getInstance().getDocument(Integer.parseInt(numDoc));
@@ -53,7 +53,7 @@ public class RendreDocument extends HttpServlet{
 			
 			for(Document docu : listeDocuments) {
 				//Si un doc n'a pas de propriétaire
-				if(docu.data()[4] == null) {
+				if((int)docu.data()[4] == 0) {
 					docsAvailable.add(docu);
 				}
 			}
@@ -65,8 +65,13 @@ public class RendreDocument extends HttpServlet{
 				}
 			}
 			
+			String disabledOrNotR = (docsToReturn.size() <= 0)?"disabled":"";
+			String disabledOrNotA = (docsAvailable.size() <= 0)?"disabled":"";
+			
 			session.setAttribute("listeDocToReturn", docsToReturn);
 			session.setAttribute("listeDocDispo", docsAvailable);
-		getServletContext().getRequestDispatcher("/services/AccueilBiblio.jsp").forward(request, response);
+			session.setAttribute("disabledR", disabledOrNotR);
+			session.setAttribute("disabledA", disabledOrNotA);
+		getServletContext().getRequestDispatcher("/services/AccueilAbo.jsp").forward(request, response);
 	}
 }

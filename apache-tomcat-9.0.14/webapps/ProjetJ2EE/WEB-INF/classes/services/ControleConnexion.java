@@ -59,7 +59,7 @@ public class ControleConnexion extends HttpServlet {
       			
       			for(Document doc : listeDocuments) {
       				//Si un doc n'a pas de propriétaire
-      				if(doc.data()[4] == null) {
+      				if((Integer)doc.data()[4] == 0) {
       					docsAvailable.add(doc);
       				}
       			}
@@ -71,8 +71,13 @@ public class ControleConnexion extends HttpServlet {
       				}
       			}
       			
+      			String disabledOrNotR = (docsToReturn.size() <= 0)?"disabled":"";
+      			String disabledOrNotA = (docsAvailable.size() <= 0)?"disabled":"";
+      			
       			session.setAttribute("listeDocToReturn", docsToReturn);
       			session.setAttribute("listeDocDispo", docsAvailable);
+      			session.setAttribute("disabledR", disabledOrNotR);
+      			session.setAttribute("disabledA", disabledOrNotA);
       			getServletContext().getRequestDispatcher("/services/AccueilAbo.jsp").forward(request, response);
       		}
       		
