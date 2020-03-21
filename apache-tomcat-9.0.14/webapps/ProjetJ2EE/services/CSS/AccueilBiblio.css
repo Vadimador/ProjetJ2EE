@@ -1,0 +1,101 @@
+body {
+    background-image:url("https://seomantique.fr/wp-content/uploads/2019/05/blank-blank-space-close-up-942872.jpg");
+    color:black;
+    font-family: 'Garamond';
+    font-size: 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+div#DocForm {
+    text-align: center;
+}
+
+div#NewDoc {
+    text-align: center;
+}
+
+
+input {
+    height: 40px;
+    border-radius: 10px;
+}
+
+div#contenu {
+    width: 65%;
+    margin-right: 12%;
+    margin-left: auto;
+}
+
+div#contenu div {
+    width: 90%;
+    font-size: 0.6em;
+    padding : 20px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+div#contenu input {
+    width: 60%;
+    text-align : center;
+    min-width: 200px;
+}
+
+div#TitreDiv {
+    margin-top: 4em;
+    min-height: 4em;
+    text-align: center;
+}
+
+.bloc {
+    background-color: white;
+    border-radius: 10px;
+    /*box-shadow: -11px 14px 5px 0px rgba(0,0,0,0.76);*/
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.76);
+}
+
+select {
+    height: 40px;
+    border-radius: 10px;
+    min-width: 200px;
+    width: 60%;
+    text-align: center;
+}
+
+input#connection {
+    transition: 0.2s;
+}
+
+input#connection:hover {
+    color: #caaf28;
+    font-size: 1.1em;
+}
+
+div#action {
+    width: 80%;
+    justify-content: space-between;
+}
+div#action div {
+    width: 42%;
+}
+ div#contenu div div input {
+     font-size: 1em;
+ }
+
+ div#contenu div div select {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.5em;
+}
